@@ -1,0 +1,7 @@
+<h1>CREATE SUBJECT CODE :<%= subject.id %></h1>
+<form action="/masterSubjectCodes" method="post">
+<input type="hidden" value="<%= subject.id %>" name="code">
+<input type="number" name="subjectCode" placeholder="enter subject code">
+<input type="text" name="subjectName" placeholder="enter subject Name">
+<input type="submit" name="submit">
+</form>

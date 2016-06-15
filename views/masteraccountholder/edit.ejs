@@ -1,0 +1,16 @@
+<h1>CREATE CUSTOMER</h1>
+<form action="/masterAccounts/<%= user.id %>" method="post">
+<input type="text" name="name" value="<%= user.name %>" placeholder="enter user name">
+<input type="text" name="email" value="<%= user.email %>" placeholder="enter user email">
+<input type="text" name="phone" value="<%= user.phone %>" placeholder="enter user phone">
+<input type="submit" name="submit">
+</form>
+<form action="/masterBooks/new" method="get">
+<input type="hidden" value="<%= user.id %>" name="owner">
+	<input type="submit" name="submit">
+</form>
+
+<form action="/masterSubjectCodes/new" method="get">
+<input type="hidden" value="<%= user.id %>" name="code">
+	<input type="submit" name="submit">
+</form>
